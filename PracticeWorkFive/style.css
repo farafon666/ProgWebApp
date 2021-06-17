@@ -1,0 +1,126 @@
+body {
+	min-height: 100vh;
+    background-color: #c8cfdc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+  margin: -1rem -1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+@media screen and (min-width: 765px) {
+  .gallery {
+    margin: -1rem -1rem;
+  }
+}
+
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(0.75);
+}
+
+header {
+    align-items: center;
+    display: flex;
+    margin: 2em;
+  }
+  #logo,
+  nav {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+    @media screen and (min-width: 765px) {
+      h1 {
+        font-size: 3rem;
+      }
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 15px;
+  }
+  
+  nav li {
+    list-style: none;
+    margin-right: 23px;
+  }
+    @media screen and (min-width: 765px) {
+      li {
+        margin: 0;
+    }
+  }
+
+  nav li:hover {
+    color:blueviolet;
+    transform: scale(1.44);
+  }
+  
+  @media (max-width: 730px) {
+    .product_block,
+    .new_arrival,
+    .news_block,
+    .news_block_lat {
+      width: 100%;
+    }
+    .news_block_lat .news_img {
+      width: 100%;
+      float: none;
+      height: 200px;
+    }
+    .news_block_lat .news_content {
+      float: none;
+      width: 100%;
+      overflow: visible;
+    }
+    .news_block_lat .news_content .nbl_tag {
+      width: 60px;
+      position: relative;
+      top: -10px;
+      z-index: 2;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .news_block_lat .news_content .nbl_title {
+      margin: 0 25px;
+    }
+    .news_block_lat .news_content .nbl_subtitle,
+    .news_block_lat .news_content .nbl_desc,
+    .news_block_lat .news_content .nbl_price {
+      margin-left: 25px;
+    }
+  }
+  
