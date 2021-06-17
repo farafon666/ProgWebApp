@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>№4</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main_form">
+        <h1 class="title">Заполнение регистрационной формы</h1>
+        <div class="form_privat">
+            <form action="check.php" method="post">
+                <ul>
+                    <li class="title">Личная информация</li>
+                    <li>
+                        <label for="lastname" class="required"> Фамилия:</label>
+                        <input type="text" id="lastname" name="lastname" required pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="25">
+                    </li>
+                    <li>
+                        <label for="firstname" class="required"> Имя:</label>
+                        <input type="text" id="firstname" name="firstname" required pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="25">
+                    </li>
+                    <li>
+                        <label for="middlename"> Отчество:</label>
+                        <input type="text" id="middlename" name="middlename" pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="25">
+                    </li>
+                    <li>
+                        <label for="gender" class="required">Пол:</label>
+                        <select name="gender" required>
+                            <option></option>
+                            <option>Жен</option>
+                            <option>Муж</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="eyes">Цвет глаз:</label>
+                        <input type="color" id="eyes" name="eyes">
+                    </li>
+                    <li>
+                        <label for="date" class="required">Дата рождения:</label>
+                        <input type="date" id="date" name="date" required>
+                    </li>
+                    <li>
+                        <label for="age">Возраст:</label>
+                        <input type="number" id="age" name="age" min="18" max="100">
+                    </li>
+                    <li>
+                        <label for="from" class="required">Место рождения:</label>
+                        <input list="%id%" placeholder="Выберите город" pattern="^[А-Яа-яЁё\s]+$" maxlength="21" required>
+                        <datalist id="%id%">
+                            <option value="Саратов">
+                            <option value="Санкт-Петербург">
+                            <option value="Волгоград">
+                            <option value="Самара">
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="passport" class="required_act">Скриншот первой страницы паспорта (только в формате jpeg):</label>
+                        <input type="file" class="passport" id="passport" name="passport" accept="image/jpeg" required>
+                    </li>
+                    <li class="title">Контактная информация</li>
+                    <li>
+                        <label for="index" class="required">Индекс:</label>
+                        <input type="number" id="index" min="100000" max="999999" required>
+                    </li>
+                    <li>
+                        <label for="house-adress" class="required">Домашний адрес:</label>
+                        <input type="text" id="house-adress" name="house-adress" required maxlength="40">
+                    </li>
+                    <li>
+                        <label for="tell" class="required">Телефон:</label>
+                        <input name="telephone" type="tel" id="applicationTelephone" placeholder="+7-xxx-xxx-xx-xx" pattern="\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="16" required>
+                    </li>
+                    <li>
+                        <label for="mail" class="required">E-mail:</label>
+                        <input type="email" id="name" name="user_name" required>
+                    </li>
+                    <li class="title">Общая информация</li>
+                    <li>
+                        <label for="date-reg" class="required">Дата регистрации:</label>
+                        <input type="date" id="date-reg" name="date-reg" required>
+                    </li>
+                    <li>
+                        <label for="frend" class="frend_act">Откуда Вы узнали об этом магазине?</label><br />
+                        <p class="frend_act"><label for="act1">Интернет</label></p><input type="checkbox" name="frend_act" id=act1><br />
+                        <p class="frend_act"><label for="act2">ТВ</label></p><input type="checkbox" name="frend_act" id=act2><br />
+                        <p class="frend_act"><label for="act3">Объявления</label></p><input type="checkbox" name="frend_act" id=act3>
+                    </li>
+                    <li>
+                        <label for="user_name" class="required_act"> Cогласие клиента на обработку и хранение персональных данных</label>
+                        <input type="checkbox" name="user_act" required>
+
+                    </li>
+                    <li>
+                        <input type="reset" value="Очистить">
+                        <input type="submit" value="Отправить">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

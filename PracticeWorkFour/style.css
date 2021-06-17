@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(#f8f66e, #bd2ce9);
+}
+
+h1.title {
+    padding: 0 1em 0.1em;
+    font-size: 40px;
+}
+
+.main_form {
+    margin: 0 auto;
+    width: 800px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: linear-gradient( #6b6967, #3b3b30 );
+}
+
+.form_privat {
+    width: 400px;
+    background: linear-gradient(#f8f66e, #bd2ce9);
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+input {
+    margin-left: 2em;
+}
+
+select {
+    margin-left: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li, li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+
+}
+label.required::after {
+    color: red;
+    content: "*";
+}
+
+label.required_act::after {
+    color: red;
+    content: "*";
+}
+
+label.required_act{
+    display: inline;
+}
+
+label.frend_act{
+    display: inline;
+}
+
+p.frend_act{
+    display: inline;
+}
+
+.title{
+    font-size: 1.5em;
+    color: #052222;
+}
+
+.passport {
+    margin-left: 9em;
+}
